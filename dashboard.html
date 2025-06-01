@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - College Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-book-reader"></i>
+            <span>College Library</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="#" class="login-btn" id="logoutBtn">Logout</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <div class="dashboard-container">
+            <!-- User Profile -->
+            <div class="user-profile">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h2 id="userName">Loading...</h2>
+                        <p id="userEmail">Loading...</p>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-book"></i>
+                        <div class="stat-info">
+                            <h3>Borrowed Books</h3>
+                            <p id="borrowedCount">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-history"></i>
+                        <div class="stat-info">
+                            <h3>Reading History</h3>
+                            <p id="historyCount">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Borrowed Books -->
+            <div class="borrowed-books">
+                <h2>My Borrowed Books</h2>
+                <div class="books-grid" id="borrowedBooksGrid">
+                    <!-- Borrowed books will be dynamically added here -->
+                </div>
+            </div>
+
+            <!-- Reading History -->
+            <div class="reading-history">
+                <h2>Reading History</h2>
+                <div class="history-list" id="readingHistory">
+                    <!-- Reading history will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> library@college.edu</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 9:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 College Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 
